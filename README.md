@@ -3,6 +3,6 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 
 # Demo 👇
 <video src="demo.mp4" controls width="640"></video>
-
+[![Link to Demo]](https://youtu.be/8GYcTioPrIA "Click to watch")
 
 
