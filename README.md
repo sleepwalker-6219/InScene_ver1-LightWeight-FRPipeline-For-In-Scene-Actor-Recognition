@@ -23,7 +23,7 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 ├── bbt_test_images/          # Some test scenes from the show - "The Big Bang Theory" to be supplied for inference.
 ├── office_gallery/           # Registered gallery of actors from the show - "The Office".
 ├── office_test_images/       # Some test scenes from the show - "The Office" to be supplied for inference.
-├── models/
+├── models/                   # Models which are used in the extraction of face embeddings
        ├── dlib_face_recognition_resnet_model_v1.dat
        ├── mmod_human_face_detector.dat
 ├── requirements.txt      # Python dependencies.
@@ -33,14 +33,15 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 ├── my_dlib_funcs.py   # Some utility functions for embeddings generation and caching.
 ├── gallery_embeddings.pkl   # Embedding cache represented as a pickle file.
 ├── requirements.txt   # Project dependencies
-├── dlib-19.24.99-cp313-cp313-win_amd64.whl   # dlib wheel for python3.13
+├── dlib-19.24.99-cp313-cp313-win_amd64.whl  # dlib wheel for python3.13
 ```
 
 ---
 
 ## 🔧 Running Dependency
 
-Download **shape-predictor-68-face-landmarks.dat** from the link [[Link to download]](https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat).
+Download **shape-predictor-68-face-landmarks.dat** from the link [[Link to download]](https://github.com/mohamedamine99/Facial-recognition-with-dlib).
+
 Place this file inside ```models/ ```
 
    ```bash
@@ -58,9 +59,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🙌 Acknowledgements
 
-* [MTCNN](https://kpzhang93.github.io/MTCNN_face_detection_alignment/) - **Research Paper** for emphasized the use of **Joint task training** which yields tremendous performance benifits.
+* [MTCNN](https://kpzhang93.github.io/MTCNN_face_detection_alignment/) - **Research Paper** which emphasized the use of **Joint task training** which yields tremendous performance benifits.
 * [Dlib](http://dlib.net/) - A library which makes accessing various **FR algorithms & strategies** seamless.
-  
+* [Special Thanks](https://github.com/mdzahirdu/face-detection-mtcnn-cropping-pipeline) - Another repo that contains a clean implementation of **MTCCNN** for a similar problem.
+* [Special Thanks](https://github.com/mohamedamine99/Facial-recognition-with-dlib) - Another repo that unambiguously shows how face embeddings can be extracted, cached & matched using dlib.
 ---
 
 ### ⭐ If you find this project helpful, don’t forget to star the repo!
