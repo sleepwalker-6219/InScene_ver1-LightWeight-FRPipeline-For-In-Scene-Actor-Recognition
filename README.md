@@ -20,9 +20,9 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 ```bash
 .
 ├── bbt_gallery/       # Registered gallery of actors from the show - "The Big Bang Theory".
-├── bbt_test/          # Some test scenes from the show - "The Big Bang Theory" to be supplied for inference.
+├── bbt_test_images/          # Some test scenes from the show - "The Big Bang Theory" to be supplied for inference.
 ├── office_gallery/    # Registered gallery of actors from the show - "The Office".
-├── office_test/       # Some test scenes from the show - "The Office" to be supplied for inference.
+├── office_test_images/       # Some test scenes from the show - "The Office" to be supplied for inference.
 ├── requirements.txt      # Python dependencies.
 ├── get_gallery_embeddings.ipynb     # To generate embeddings for the pre-registered gallery of actors.
 ├── crop_recog_persistant_inf.ipynb  # Runs the entire inference pipeline i.e. supply test image --> faces get detected and cropped --> Embeddings get generated and matched with the cached gallery embeddings.
@@ -31,14 +31,13 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 ├── gallery_embeddings.pkl   # Embedding cache represented as a pickle file.
 ├── requirements.txt   # Project dependencies
 ├── dlib-19.24.99-cp313-cp313-win_amd64.whl   # dlib wheel for python3.13
-└── LICENSE               # License file
 ```
 
 ---
 
-## 🔧 Running
+## 🔧 Running Dependency
 
-Clone the repo:
+Download 
 
    ```bash
    git clone https://github.com/yourusername/in-scene-actor-recognition.git
