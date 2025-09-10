@@ -10,7 +10,7 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 
 ## 🚀 Features
 
-* **MTCNN-based face crop extraction**: Accurate multi-scale face extraction **In the Wild!**.
+* **MTCNN-based face crop extraction**: Accurate multi-scale face extraction **In the Wild!**
 * **Dlib embeddings**: **128D face feature vectors** for robust recognition.
 * **Actor recognition**: Match faces against a pre-registered set of actors to output the identities of all **highlighted actors** present in a scene.
 ---
@@ -19,15 +19,10 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 
 ```bash
 .
-├── data/                 # Store training images & samples per actor
-├── models/               # Pretrained or fine-tuned models
-├── src/
-│   ├── detector.py       # MTCNN face detector
-│   ├── aligner.py        # Face alignment utilities
-│   ├── embedder.py       # Dlib embeddings wrapper
-│   ├── recognizer.py     # Actor recognition logic
-│   └── pipeline.py       # End-to-end pipeline script
-├── notebooks/            # Jupyter notebooks for experiments
+├── bbt_gallery/       # Registered gallery of actors from the show - "The Big Bang Theory"
+├── bbt_test/          # Some test scenes from the show - "The Big Bang Theory" to be supplied for inference.
+├── office_gallery/    # Registered gallery of actors from the show - "The Office"
+├── office_test/       # Some test scenes from the show - "The Office" to be supplied for inference.
 ├── requirements.txt      # Python dependencies
 ├── README.md             # Project documentation (you are here)
 └── LICENSE               # License file
