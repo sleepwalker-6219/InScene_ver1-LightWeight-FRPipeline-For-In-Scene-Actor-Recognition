@@ -19,10 +19,13 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 
 ```bash
 .
-├── bbt_gallery/       # Registered gallery of actors from the show - "The Big Bang Theory".
+├── bbt_gallery/              # Registered gallery of actors from the show - "The Big Bang Theory".
 ├── bbt_test_images/          # Some test scenes from the show - "The Big Bang Theory" to be supplied for inference.
-├── office_gallery/    # Registered gallery of actors from the show - "The Office".
+├── office_gallery/           # Registered gallery of actors from the show - "The Office".
 ├── office_test_images/       # Some test scenes from the show - "The Office" to be supplied for inference.
+├── models/
+       ├── dlib_face_recognition_resnet_model_v1.dat
+       ├── mmod_human_face_detector.dat
 ├── requirements.txt      # Python dependencies.
 ├── get_gallery_embeddings.ipynb     # To generate embeddings for the pre-registered gallery of actors.
 ├── crop_recog_persistant_inf.ipynb  # Runs the entire inference pipeline i.e. supply test image --> faces get detected and cropped --> Embeddings get generated and matched with the cached gallery embeddings.
@@ -37,11 +40,14 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 
 ## 🔧 Running Dependency
 
-Download **shape-predictor-68-face-landmarks.dat** from the link [[Link to Demo]]((https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat))
+Download **shape-predictor-68-face-landmarks.dat** from the link [[Link to download]](https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat).
+Place this file inside ```bash models/ ```
 
    ```bash
-   git clone https://github.com/yourusername/in-scene-actor-recognition.git
-   cd in-scene-actor-recognition
+   ├── models/
+       ├── dlib_face_recognition_resnet_model_v1.dat
+       ├── mmod_human_face_detector.dat
+       ├── shape-predictor-68-face-landmarks.dat
    ```
 
 ## 📜 License
