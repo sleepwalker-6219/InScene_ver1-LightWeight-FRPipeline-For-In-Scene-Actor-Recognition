@@ -9,4 +9,5 @@ pandas
 pillow
 openpyxl
 streamlit
+uv
 dlib-19.24.99-cp313-cp313-win_amd64.whl
