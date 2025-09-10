@@ -37,7 +37,7 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 
 ## 🔧 Running Dependency
 
-Download 
+Download **shape-predictor-68-face-landmarks.dat** from the link [[Link to Demo]]((https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat))
 
    ```bash
    git clone https://github.com/yourusername/in-scene-actor-recognition.git
