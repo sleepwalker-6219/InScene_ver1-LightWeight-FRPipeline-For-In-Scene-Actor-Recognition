@@ -41,7 +41,7 @@ This repo presents a lightweight face recognition pipeline which can be (in movi
 ## 🔧 Running Dependency
 
 Download **shape-predictor-68-face-landmarks.dat** from the link [[Link to download]](https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat).
-Place this file inside ```bash models/ ```
+Place this file inside ```models/ ```
 
    ```bash
    ├── models/
@@ -58,8 +58,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🙌 Acknowledgements
 
-* [MTCNN](https://kpzhang93.github.io/MTCNN_face_detection_alignment/) for face detection
-* [Dlib](http://dlib.net/) for face recognition embeddings
+* [MTCNN](https://kpzhang93.github.io/MTCNN_face_detection_alignment/) - **Research Paper** for emphasized the use of **Joint task training** which yields tremendous performance benifits.
+* [Dlib](http://dlib.net/) - A library which makes accessing various **FR algorithms & strategies** seamless.
   
 ---
 
